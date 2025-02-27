@@ -1,0 +1,48 @@
+Source: vifm
+Section: utils
+Priority: optional
+Maintainer: Kirill Rekhov <krekhov.dev@gmail.com>
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-vim-addon,
+               libmagic-dev,
+               libncurses-dev,
+               libx11-dev,
+               vim
+Rules-Requires-Root: no
+Standards-Version: 4.7.0
+Homepage: https://vifm.info/
+Vcs-Browser: https://salsa.debian.org/debian/vifm
+Vcs-Git: https://salsa.debian.org/debian/vifm.git
+Package: vifm
+Architecture: amd64
+Version: 0.14
+Depends: libc6, libmagic1, libncursesw6, libtinfo6
+Recommends: libx11-6
+Description: Flexible vi-like file manager using ncurses
+ Vifm is a file manager providing a vi-like usage experience. It features
+ similar keybindings and modes (e.g., normal, command line, visual). The
+ interface uses ncurses, making vifm suitable for text-only environments.
+ .
+ It supports a wide range of features, some of which are familiar from the
+ vi-editor:
+  - UTF-8 support
+  - User mappings (almost like in vi)
+  - Ranges in command-line commands
+  - User-defined commands (with support for ranges)
+  - Registers
+  - Operation undoing/redoing
+  - FUSE file systems support
+  - Trash management
+  - Multiple files renaming
+  - Support for filename modifiers
+  - Colorschemes support
+  - File name coloring according to file type
+  - Path-specific colorscheme customization
+  - Bookmarks
+  - Operation backgrounding
+  - Customizable file viewers
+  - Handy less-like preview mode
+  - Filtering and searching for files using regular expressions
+  - One or two panes view
+ .
+ Additionally, vifm includes a plugin to use it as a file selector within vim.
